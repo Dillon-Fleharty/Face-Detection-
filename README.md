@@ -1,5 +1,43 @@
-# Face-Detection-
+# AdaBoost-based Face Detection
 
-  The objective of this project is to design and implement a a face detection system using ```AdaBoost``` combined with rectangle filters and ```classifier cascades```. A crucial goal is the effective integration of AdaBoost for feature selection and classification. Another aspect of the project is incorporating skin detection algorithms to enhance the efficiency and accuracy in the use of color images. This use of skin detection will help reducing the computation overhead and improve the systems ability to focus on relevant areas. 
-    Further, the project aims to implement a cascade of classifiers, optimizing the balance between speed and accuracy. Overall, the goals of this project are to achieve a high degree of accuracy in face detection while maintaining a reasonable computational load. 
-    All project files and source code are provided along with example test output images and accuracy scores. 
+## Overview
+This project implements a face detector using AdaBoost, combining both skin color information and rectangle filters. It incorporates the concept of classifier cascades to efficiently and accurately detect faces in color images.
+
+## Features
+- **AdaBoost Training**: Utilizes AdaBoost with rectangle filters to train the face detection components.
+- **Skin Detection**: Employs a skin detector to enhance face detection efficiency.
+- **Classifier Cascades**: Implements a sequence of classifiers, ranging from fast and less accurate to slow and more accurate, with appropriately selected thresholds to minimize classification errors.
+
+## Data
+The dataset for training and testing is provided in `training_test_data.zip`. It includes:
+- Positive examples in `training_faces`
+- Negative examples from `training_nonfaces`
+- Test data in `test_cropped_faces`, `test_face_photos`, and `test_nonfaces`
+- Face annotations in `face_annotations.py`
+
+## Training
+The system should be trained using images from `training_faces` as positive examples and windows from `training_nonfaces` as negative examples.
+
+## Testing
+The test datasets can be found in the aforementioned directories. A detection is considered correct if there's at least a 50% overlap with the bounding boxes provided in `face_annotations.py`.
+
+## Usage
+Instructions for setting up, training, and testing the detector will be provided here.
+
+## Requirements
+List of libraries and dependencies to run the project.
+
+## Contributing
+Guidelines for contributing to this project (if applicable).
+
+## License
+Specify the license under which this project is made available.
+
+## Acknowledgements
+Credits to the course materials and any third-party libraries or tools used.
+
+---
+
+Please note that the test data provided should not be used for training purposes.
+
+Happy detecting!
