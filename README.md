@@ -25,16 +25,9 @@ The test datasets can be found in the aforementioned directories. A detection is
 Instructions for setting up, training, and testing the detector will be provided here.
 
 ## Requirements
-List of libraries and dependencies to run the project.
+List of libraries and dependencies to run the project can be found in the project file under `requirements`.
 
-## Contributing
-Guidelines for contributing to this project (if applicable).
 
-## License
-Specify the license under which this project is made available.
-
-## Acknowledgements
-Credits to the course materials and any third-party libraries or tools used.
 
 ---
 
